@@ -1,0 +1,25 @@
+﻿@model CategoryRequestModel
+
+<form asp-controller="Category" asp-action="CreateCategory" method="post">
+
+    <div class="form-group">
+        <label>
+            <span asp-validation-for="CategoryName" class="text-danger">  </span>
+        </label>
+        <input asp-for="CategoryName" class="form-control" placeholder="Kategori İsmi Giriniz" /> 
+    </div>
+
+    <br />
+
+    <div>
+        <label>
+            <span asp-validation-for="CategoryName" class="text-danger"></span>
+        </label>
+        <input asp-for="Description" class="form-control" placeholder="Aciklama Giriniz" /> 
+    </div>
+
+    <br />
+
+    <button class="btn btn-primary"> Ekle </button>
+
+</form>
